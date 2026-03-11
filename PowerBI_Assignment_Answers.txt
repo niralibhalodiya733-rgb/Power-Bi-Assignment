@@ -1,0 +1,67 @@
+POWER BI – ASSIGNMENT ANSWERS
+
+1) What is Power BI and how does it differ from Excel?
+Power BI is a business intelligence and data visualization tool developed by Microsoft that helps users connect to multiple data sources, transform data, and create interactive dashboards and reports. Unlike Excel, which is mainly spreadsheet-based and suitable for small to medium datasets, Power BI is designed to handle large datasets, supports advanced data modeling, real-time dashboards, and offers cloud-based sharing and collaboration through Power BI Service.
+
+2) Explain the concept of data modeling in Power BI.
+Data modeling in Power BI is the process of structuring data by defining relationships between tables, creating calculated columns and measures, and optimizing data for analysis. A good data model typically follows a star schema, improves performance, ensures accurate calculations, and makes reports easier to understand and maintain.
+
+3) What are the different types of connections available in Power BI?
+Power BI supports Import, DirectQuery, and Live Connection modes. Import mode loads data into memory for faster performance. DirectQuery keeps data in the source and queries it in real time. Live Connection is mainly used with SQL Server Analysis Services and Power BI datasets for real-time reporting without data duplication.
+
+4) How do you handle data transformation in Power BI?
+Data transformation in Power BI is handled using Power Query. It allows cleaning, shaping, and transforming data through steps such as filtering rows, removing duplicates, changing data types, merging queries, and creating custom columns using M language before loading data into the model.
+
+5) What is DAX (Data Analysis Expressions) and why is it important in Power BI?
+DAX is a formula language used in Power BI for creating calculated columns, measures, and tables. It is important because it enables complex calculations, time intelligence functions, and dynamic aggregations that respond to filters and slicers in reports.
+
+6) Explain the difference between calculated columns and measures in Power BI.
+Calculated columns are computed row by row and stored in the data model, increasing model size. Measures are calculated dynamically at query time based on filter context and do not consume storage. Measures are preferred for aggregations and KPIs due to better performance.
+
+7) How do you handle relationships between tables in Power BI?
+Relationships are managed in the Model view by defining primary and foreign keys, cardinality (one-to-one, one-to-many), and cross-filter direction. Proper relationships ensure accurate data filtering and aggregation across multiple tables.
+
+8) What is the purpose of a Power BI Gateway?
+Power BI Gateway acts as a bridge between on-premises data sources and Power BI Service. It allows secure data refresh and real-time access to on-premises databases without moving data to the cloud.
+
+9) How can you schedule data refresh in Power BI Service?
+Scheduled refresh is configured in Power BI Service by setting refresh frequency, time zone, and credentials for data sources. A gateway is required for on-premises data sources.
+
+10) Explain the concept of row-level security in Power BI.
+Row-level security restricts data access at the row level based on user roles. It is implemented using DAX filters, ensuring users can only see data relevant to them.
+
+11) What is Power BI Desktop and how does it differ from Power BI Service?
+Power BI Desktop is a development tool used to create reports and data models. Power BI Service is a cloud platform used for publishing, sharing, collaboration, and scheduled refresh.
+
+12) Explain the concept of DirectQuery in Power BI.
+DirectQuery allows Power BI to query data directly from the source without importing it. It is useful for large datasets and real-time reporting but may have performance limitations.
+
+13) What are Power BI templates and how are they useful?
+Power BI templates (.pbit) store report structure, visuals, and data model without actual data. They help standardize reporting and enable reuse across projects.
+
+14) How do you handle incremental data refresh in Power BI?
+Incremental refresh loads only new or changed data instead of refreshing the entire dataset. It is configured using date filters and improves performance for large datasets.
+
+15) What is the role of Power Query in Power BI?
+Power Query is responsible for data extraction, transformation, and loading. It ensures data quality and consistency before analysis.
+
+16) Difference between calculated columns and calculated tables in Power BI.
+Calculated columns add new columns to existing tables, while calculated tables create entirely new tables using DAX. Calculated tables are useful for intermediate aggregations or lookup tables.
+
+17) How do you create custom visuals in Power BI?
+Custom visuals can be created using Power BI Visuals SDK with tools like TypeScript, D3.js, and Visual Studio Code, or imported from AppSource.
+
+18) Best practices for optimizing performance in Power BI.
+Best practices include reducing data size, using star schema, avoiding unnecessary columns, preferring measures over columns, optimizing DAX, and using incremental refresh.
+
+19) How can you integrate Power BI with Azure and Office 365?
+Power BI integrates with Azure services like Azure SQL, Synapse, and Data Factory, and Office 365 tools like Excel, Teams, and SharePoint for seamless analytics and collaboration.
+
+20) Explain the concept of aggregations in Power BI.
+Aggregations store summarized data at higher granularity to improve query performance, especially when combined with DirectQuery datasets.
+
+21) How do you handle error handling and data quality in Power BI?
+Error handling is managed using Power Query features like error removal, conditional columns, and data profiling. Data validation rules ensure accuracy and consistency.
+
+22) What is the purpose of Power BI Embedded and when would you use it?
+Power BI Embedded allows developers to integrate Power BI reports into custom applications. It is used when analytics need to be delivered to external users without requiring Power BI licenses.
